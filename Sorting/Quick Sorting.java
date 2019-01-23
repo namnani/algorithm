@@ -1,3 +1,4 @@
+```
 package stack2;
 
 import java.util.Arrays;
@@ -42,3 +43,4 @@ public class QuickSort {
 		System.out.println(Arrays.toString(a));
 	}
 }
+```

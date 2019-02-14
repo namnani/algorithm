@@ -2,9 +2,7 @@
 public static int pow(int base, int exponent) {
 		int result = 1;
     
-//		for(int i = 0; i<exponent; i++) {
-//			result *= base;
-//		}
+
 
 		while(exponent > 0) {
 			if( (exponent & 1) == 1) result = result * base;

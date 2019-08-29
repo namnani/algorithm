@@ -22,9 +22,9 @@ class Solution {
           failStage[i][0] = i;
           if(totalTryUserPerStage[i] == 0) {
             failStage[i][1] = 0;
-			     } else
-				  failStage[i][1] = (double) notClearStage[i] / totalTryUserPerStage[i];
-	    	}
+	   } else
+	      failStage[i][1] = (double) notClearStage[i] / totalTryUserPerStage[i];
+	}
         
        Arrays.sort(failStage, new Comparator<double[]>() {
 			@Override
@@ -43,15 +43,14 @@ class Solution {
         
         int[] answer = new int[N];
         int i = 0;
-		int j = 0;
-		while(i!=N) {
-			if(failStage[N-j][0] != 0) {
-				answer[i] = (int) failStage[N - j][0];
-				i++;
-			}
-			j++;
-			
+	int j = 0;
+	while(i!=N) {
+		if(failStage[N-j][0] != 0) {
+			answer[i] = (int) failStage[N - j][0];
+			i++;
 		}
+		j++;
+	}
         return answer;
     }
 }

@@ -80,7 +80,7 @@ public class 주사위굴리기_14499 {
             dice[5] = tempDice[6];
             dice[6] = tempDice[2];
             dice[2] = tempDice[1];
-        } else if (temp == 4) { //
+        } else if (temp == 4) { // 남
             dice[1] = tempDice[2];
             dice[5] = tempDice[1];
             dice[6] = tempDice[5];
